@@ -1,0 +1,133 @@
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f0f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden; /* Prevent scrolling */
+  color: #333;
+}
+
+.myapp {
+  position: fixed; /* Ensures the app stays fixed on the screen */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the app */
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  text-align: center;
+}
+
+.searchInput {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.temp {
+  margin-top: 20px;
+}
+
+.temp p {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+#weather {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+#weather .temp {
+  text-align: center;
+}
+
+#weather .temp p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.second {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #33cc33;
+  margin-bottom: 10px;
+  background-color: black;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.description {
+  margin-top: 15px;
+}
+
+.description img {
+  width: 50px;
+  height: 50px;
+}
+
+.description p {
+  margin: 5px 0;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.details div {
+  text-align: center;
+}
+
+.details div p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .myapp {
+    width: 70%; /* Adjust width for smaller screens */
+  }
+}
