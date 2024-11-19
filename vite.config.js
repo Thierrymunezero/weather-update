@@ -7,5 +7,4 @@ export default defineConfig(() => ({
     host: true, 
     port: process.env.PORT || 3000, 
   },
-
 }));
