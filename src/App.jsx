@@ -6,14 +6,6 @@ function App() {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
 
-  //const getBackgroundStyle = () => {
-  ///   if (!weather) return { backgroundColor: "#f0f8ff" }; // Default
-  ///   const temp = weather.main.temp;
-  ///   if (temp <= 10) return { backgroundColor: "#89CFF0" }; // Cold
-  ///   if (temp <= 25) return { backgroundColor: "#FFD700" }; // Mild
-  //  return { backgroundColor: "#FF4500" }; // Hot
-  /// };
-  ///
 
   const getBackgroundStyle = () => {
     if (!weather) return { backgroundColor: "#f0f8ff", color: "#000000" }; // Default
